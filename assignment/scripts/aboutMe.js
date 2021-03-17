@@ -1,35 +1,52 @@
 // REQUIRED FEATURES:
 // 1 - Create a variable called `firstName` and assign it the value of your first name
-let firstName = "Eyram";
+let firstName = 'Eyram';
 console.log(firstName);
+
 // 2 - Create a second variable called `lastName` and assign it the value of your last name
-let lastName = "Tay";
+let lastName = 'Tay';
 console.log(lastName);
+
 // 3 - Create a third variable called `fullName`, assign it the value of your first and last name
 // (remember, you already have variables for this, can you use those?)
 let fullName = firstName + " " + lastName;
 
 // 4 - Console log the value of `fullName`
-console.log(fullName);
+console.log('My full name is:', fullName);
+console.log(`My full name is: ${fullName}.`);
+
 // 5 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
-let luckyNumber = "22";
+let luckyNumber = 22;
+console.log('My lucky number is:', luckyNumber);
+
 // 6 - Console log this sentence, adding in the variables you created above:
 // 'My name is (full name), and I think (lucky number) is a winner!'.
 // Refer back to the videos if you need help with this one.
-console.log("My name is " + " " + fullName + ", and I think " + luckyNumber + " " + "is a winner!");
+console.log('My name is ' + fullName + ', and I think ' + luckyNumber + " " + 'is a winner!');
+console.log(`My name is ${fullName}, and I think ${luckyNumber} is a winner!!`);
 // 7 - Create a variable named `adventurous` and set it to a boolean value (true or false)
 let adventurous = true;
+
 // 8 - Create a variable named `food`, and set its value to a string of your favorite food
-let food = 'Italian ' + 'Chicken Wings ' + 'Brunch';
+let food = 'Italian, Chicken Wings, Brunch';
 console.log(food);
+
 // 9 - Create a variable called `pets` and set it to the value of the number of pets you have
 let pets = 1;
+console.log('I have ' + pets + ' pet.');
+
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
 let friendsPets = 2;
+console.log('My friend has ' + friendsPets + ' pets.');
+
 // 11 - Add two pets to your `pets` variable
+pets = 3;
+console.log('Added two pets to the "pets" variable:', pets);
 
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 const allowedPets = 5;
+console.log('Amount of allowed pets:', allowedPets);
+
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!",
 // if it's not true, console log "How about we stay home?"
 if (adventurous == true) {
@@ -71,6 +88,15 @@ if (pets < allowedPets) {
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
+
+let myPets = 3;
+let myFriendsPets = 5;
+
+let mostPets;
+if (myPets > myFriendsPets) {
+  mostPets = myPets;
+} else mostPets = myFriendsPets;
+console.log('Most pets is', mostPets);
 
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
 
